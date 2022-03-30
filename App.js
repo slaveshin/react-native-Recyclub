@@ -1,9 +1,13 @@
 import AppLoading from "expo-app-loading";
-import { Asset, useAssets } from "expo-asset";
+import { Asset } from "expo-asset";
 import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
 import * as Font from "expo-font";
-import { Text } from "react-native";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { NavigationContainer } from "@react-navigation/native";
+import Root from "./navigations/Root";
+
+const queryClient = new QueryClient();
 
 const loadFonts = (fonts) => fonts.map((font) => Font.loadAsync(font));
 const loadImages = (images) => {
@@ -32,5 +36,11 @@ export default function App() {
       />
     );
   }
-  return <Text>I finish my loading!!</Text>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <NavigationContainer>
+        <Root />
+      </NavigationContainer>
+    </QueryClientProvider>
+  );
 }
