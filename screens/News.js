@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useQuery } from "react-query";
 import styled from "styled-components/native";
-import { getNews } from "../api";
+import { getNews } from "../src/api";
 import Loader from "../components/Loader";
 import { ConvertText } from "../function/util";
 const Separator = styled.View`
@@ -64,7 +64,6 @@ const Title = styled.Text`
 const Content = styled.Text`
   margin-top: 20px;
 `;
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
 const News = () => {
   const { isLoading, data } = useQuery(["News", "Article"], getNews);

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>58682053618-nnq7m6o8gbc6jflkn5jm5v4bi8527v56.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.58682053618-nnq7m6o8gbc6jflkn5jm5v4bi8527v56</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCCZteR7aH7LPwmaO0xuC-FoqNhg05LPhw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>58682053618</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.name.Recyclub</string>
+	<key>PROJECT_ID</key>
+	<string>react-native-recyclub</string>
+	<key>STORAGE_BUCKET</key>
+	<string>react-native-recyclub.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:58682053618:ios:6231dfa861f6e48da3516b</string>
+	<key>DATABASE_URL</key>
+	<string>https://react-native-recyclub-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
