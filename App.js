@@ -6,6 +6,8 @@ import * as Font from "expo-font";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { NavigationContainer } from "@react-navigation/native";
 import Root from "./navigations/Root";
+import "react-native-gesture-handler";
+import Tabs from "./navigations/Tabs";
 
 const queryClient = new QueryClient();
 

@@ -19,10 +19,11 @@ const Tabs = () => (
         fontSize: 12,
         fontWeight: "600",
       },
+      headerShown: false,
     }}
   >
     <Tab.Screen
-      name="홈"
+      name="Home"
       component={Home}
       options={{
         tabBarIcon: ({ color, size }) => {
@@ -31,7 +32,7 @@ const Tabs = () => (
       }}
     />
     <Tab.Screen
-      name="뉴스"
+      name="News"
       component={News}
       options={{
         tabBarIcon: ({ color, size }) => {
@@ -40,7 +41,7 @@ const Tabs = () => (
       }}
     />
     <Tab.Screen
-      name="검색"
+      name="Search"
       component={Search}
       options={{
         tabBarIcon: ({ color, size }) => {
