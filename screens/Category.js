@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { FlatList, Text } from "react-native";
 import { useQuery } from "react-query";
@@ -28,6 +29,12 @@ const Box = styled.TouchableOpacity`
 `;
 const Category = () => {
   const { isLoading, data } = useQuery(["DB", "Category"], getDB);
+  const navigation = useNavigation();
+  const GotoDetail = () => {
+    navigation.navigate("Stack", {
+      screen: "Detail",
+    });
+  };
   return isLoading ? (
     <Loader />
   ) : (
@@ -36,7 +43,7 @@ const Category = () => {
       ItemSeparatorComponent={Separator}
       keyExtractor={(item, index) => index.toString()}
       renderItem={({ item }) => (
-        <Box>
+        <Box onPress={GotoDetail}>
           <Text>{item.title}</Text>
         </Box>
       )}
